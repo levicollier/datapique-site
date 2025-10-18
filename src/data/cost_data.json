@@ -1,0 +1,22 @@
+[
+  { "category": "Home Repair", "sub_category": "HVAC Repair", "city": "New York, NY", "low_cost": 320, "avg_cost": 490, "high_cost": 710, "period": "2025 Q1", "confidence_score": 88, "data_source": "Numbeo / BLS" },
+  { "category": "Home Repair", "sub_category": "HVAC Repair", "city": "Dallas, TX", "low_cost": 250, "avg_cost": 410, "high_cost": 620, "period": "2025 Q1", "confidence_score": 84, "data_source": "HomeAdvisor / BLS" },
+  { "category": "Home Repair", "sub_category": "Plumbing", "city": "Atlanta, GA", "low_cost": 180, "avg_cost": 315, "high_cost": 520, "period": "2025 Q1", "confidence_score": 86, "data_source": "Numbeo" },
+  { "category": "Home Repair", "sub_category": "Roof Repair", "city": "Chicago, IL", "low_cost": 440, "avg_cost": 760, "high_cost": 1150, "period": "2025 Q1", "confidence_score": 82, "data_source": "HomeGuide" },
+  { "category": "Home Repair", "sub_category": "Electrical Work", "city": "Los Angeles, CA", "low_cost": 210, "avg_cost": 385, "high_cost": 590, "period": "2025 Q1", "confidence_score": 83, "data_source": "Numbeo / BLS" },
+  { "category": "Home Remodel", "sub_category": "Kitchen Remodel", "city": "Miami, FL", "low_cost": 12000, "avg_cost": 18500, "high_cost": 27000, "period": "2025 Q1", "confidence_score": 78, "data_source": "HomeBuffer" },
+  { "category": "Professional Services", "sub_category": "Marketing Consulting", "city": "Austin, TX", "low_cost": 950, "avg_cost": 1750, "high_cost": 2750, "period": "2025 Q1", "confidence_score": 90, "data_source": "Clutch / SalaryExplorer" },
+  { "category": "Professional Services", "sub_category": "Web Development", "city": "Seattle, WA", "low_cost": 1200, "avg_cost": 2100, "high_cost": 3500, "period": "2025 Q1", "confidence_score": 87, "data_source": "Upwork Avg" },
+  { "category": "Auto Repair", "sub_category": "Brake Job", "city": "Phoenix, AZ", "low_cost": 250, "avg_cost": 390, "high_cost": 615, "period": "2025 Q1", "confidence_score": 89, "data_source": "RepairPal" },
+  { "category": "Personal Care", "sub_category": "Fitness Training", "city": "Denver, CO", "low_cost": 40, "avg_cost": 65, "high_cost": 95, "period": "2025 Q1", "confidence_score": 85, "data_source": "Numbeo" },
+  { "category": "Home Repair", "sub_category": "Plumbing", "city": "Houston, TX", "low_cost": 150, "avg_cost": 300, "high_cost": 480, "period": "2025 Q1", "confidence_score": 87, "data_source": "BLS" },
+  { "category": "Home Repair", "sub_category": "Roof Repair", "city": "Portland, OR", "low_cost": 420, "avg_cost": 680, "high_cost": 980, "period": "2025 Q1", "confidence_score": 83, "data_source": "HomeAdvisor" },
+  { "category": "Auto Repair", "sub_category": "Tire Replacement", "city": "Boston, MA", "low_cost": 120, "avg_cost": 190, "high_cost": 270, "period": "2025 Q1", "confidence_score": 90, "data_source": "RepairPal / Numbeo" },
+  { "category": "Personal Care", "sub_category": "Haircut", "city": "Chicago, IL", "low_cost": 25, "avg_cost": 40, "high_cost": 60, "period": "2025 Q1", "confidence_score": 80, "data_source": "Numbeo" },
+  { "category": "Professional Services", "sub_category": "Tax Preparation", "city": "New York, NY", "low_cost": 200, "avg_cost": 400, "high_cost": 700, "period": "2025 Q1", "confidence_score": 88, "data_source": "IRS / Yelp" },
+  { "category": "Professional Services", "sub_category": "Graphic Design", "city": "San Francisco, CA", "low_cost": 400, "avg_cost": 800, "high_cost": 1400, "period": "2025 Q1", "confidence_score": 86, "data_source": "Upwork" },
+  { "category": "Home Remodel", "sub_category": "Bathroom Remodel", "city": "Raleigh, NC", "low_cost": 6000, "avg_cost": 9400, "high_cost": 13200, "period": "2025 Q1", "confidence_score": 81, "data_source": "HomeAdvisor" },
+  { "category": "Auto Repair", "sub_category": "Oil Change", "city": "Cleveland, OH", "low_cost": 30, "avg_cost": 50, "high_cost": 80, "period": "2025 Q1", "confidence_score": 90, "data_source": "RepairPal" },
+  { "category": "Personal Care", "sub_category": "Massage Therapy", "city": "Los Angeles, CA", "low_cost": 75, "avg_cost": 120, "high_cost": 190, "period": "2025 Q1", "confidence_score": 88, "data_source": "Numbeo" },
+  { "category": "Professional Services", "sub_category": "Wedding Photography", "city": "Orlando, FL", "low_cost": 1000, "avg_cost": 1750, "high_cost": 2600, "period": "2025 Q1", "confidence_score": 82, "data_source": "TheKnot" }
+]
