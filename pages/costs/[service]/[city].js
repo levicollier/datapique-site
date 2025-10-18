@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import data from '../../data/cost_data.json';
+import data from '../../../data/cost_data.json';
 
 export default function CostPage() {
   const router = useRouter();
