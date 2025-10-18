@@ -1,0 +1,12 @@
+[
+  { "category":"Home Repair","sub_category":"HVAC Repair","city":"New York, NY","low_cost":320,"avg_cost":490,"high_cost":710,"period":"2025 Q1","confidence_score":88,"data_source":"Numbeo / BLS" },
+  { "category":"Home Repair","sub_category":"HVAC Repair","city":"Dallas, TX","low_cost":250,"avg_cost":410,"high_cost":620,"period":"2025 Q1","confidence_score":84,"data_source":"HomeAdvisor / BLS" },
+  { "category":"Home Repair","sub_category":"Plumbing","city":"Atlanta, GA","low_cost":180,"avg_cost":315,"high_cost":520,"period":"2025 Q1","confidence_score":86,"data_source":"Numbeo" },
+  { "category":"Home Repair","sub_category":"Roof Repair","city":"Chicago, IL","low_cost":440,"avg_cost":760,"high_cost":1150,"period":"2025 Q1","confidence_score":82,"data_source":"HomeGuide" },
+  { "category":"Home Repair","sub_category":"Electrical Work","city":"Los Angeles, CA","low_cost":210,"avg_cost":385,"high_cost":590,"period":"2025 Q1","confidence_score":83,"data_source":"Numbeo / BLS" },
+  { "category":"Home Remodel","sub_category":"Kitchen Remodel","city":"Miami, FL","low_cost":12000,"avg_cost":18500,"high_cost":27000,"period":"2025 Q1","confidence_score":78,"data_source":"HomeBuffer" },
+  { "category":"Professional Services","sub_category":"Marketing Consulting","city":"Austin, TX","low_cost":950,"avg_cost":1750,"high_cost":2750,"period":"2025 Q1","confidence_score":90,"data_source":"SalaryExplorer / Clutch" },
+  { "category":"Professional Services","sub_category":"Web Development","city":"Seattle, WA","low_cost":1200,"avg_cost":2100,"high_cost":3500,"period":"2025 Q1","confidence_score":87,"data_source":"Upwork Avg" },
+  { "category":"Auto Repair","sub_category":"Brake Job","city":"Phoenix, AZ","low_cost":250,"avg_cost":390,"high_cost":615,"period":"2025 Q1","confidence_score":89,"data_source":"RepairPal" },
+  { "category":"Personal Care","sub_category":"Fitness Training","city":"Denver, CO","low_cost":40,"avg_cost":65,"high_cost":95,"period":"2025 Q1","confidence_score":85,"data_source":"Numbeo / Self‑calc" }
+]
