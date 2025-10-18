@@ -39,7 +39,7 @@ export default function TrueCostEstimator() {
         <div style={{marginTop:'1em'}}>
           <h3>{result.sub_category} in {result.city}</h3>
           <p>Average Cost: ${result.avg_cost}</p>
-          <p>Typical Range: ${result.low_cost – ${result.high_cost}</p>
+          <p>Typical Range: ${result.low_cost} – ${result.high_cost}</p>
           <p>Confidence: {result.confidence_score}%</p>
           <small>Source: {result.data_source}</small>
         </div>
