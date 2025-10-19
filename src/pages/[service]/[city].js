@@ -16,46 +16,4 @@ export default function CityServicePage({ item }) {
     );
   }
 
-  return (
-    <Layout
-      title={`${item.sub_category} in ${item.city}`}
-      description={`Average ${item.sub_category.toLowerCase()} cost in ${
-        item.city
-      }: $${item.avg_cost}. Typical range $${item.low_cost}–$${
-        item.high_cost
-      }.`}
-    >
-      <article>
-        <Breadcrumbs service={item.sub_category} city={item.city} />
-
-        <h2 style={{ marginBottom: "1rem" }}>
-          {item.sub_category} in {item.city}
-        </h2>
-
-        <p>
-          <strong>Average Cost:</strong> ${item.avg_cost}
-        </p>
-        <p>
-          <strong>Typical Range:</strong> ${item.low_cost} – ${item.high_cost}
-        </p>
-        <p>
-          <strong>Confidence Score:</strong> {item.confidence_score}%
-        </p>
-        <p>
-          <small>Source: {item.data_source}</small>
-        </p>
-      </article>
-    </Layout>
-  );
-}
-
-/* 🔤 Normalize helper to keep slug generation consistent */
-function normalize(str) {
-  return str
-    .toLowerCase()
-    .replace(/,/g, "") // remove commas
-    .replace(/\s+/g, "-") // replace spaces with dashes
-    .replace(/[^a-z0-9-]/g, ""); // remove anything else funky
-}
-
-/* 🏗️ Generate pages at build time */
+  return
