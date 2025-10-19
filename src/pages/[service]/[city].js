@@ -1,55 +1,65 @@
-import Layout from "../components/Layout";
-import Link from "next/link";
-import data from "../data/cost_data.json";
+import Layout from "../../components/Layout";
+import data from "../../data/cost_data.json";
 
-export default function HomePage() {
+export default function CityServicePage({ item }) {
+  if (!item) {
+    return (
+      <Layout title="Not Found">
+        <main style={{ padding: "2rem" }}>
+          <h2>Service not found</h2>
+          <p>
+            Sorry — we couldn’t find data for this particular service and city.
+          </p>
+        </main>
+      </Layout>
+    );
+  }
+
   return (
     <Layout
-      title="Cost Benchmarks"
-      description="Explore average cost benchmarks for home repairs and services across major US cities."
+      title={`${item.sub_category} in ${item.city}`}
+      description={`Average ${item.sub_category.toLowerCase()} cost in ${
+        item.city
+      } is around $${item.avg_cost}. Typical range $${item.low_cost} – $${item.high_cost}. Confidence score ${item.confidence_score}%.`}
     >
-      <h2 style={{ marginBottom: "1.5rem" }}>Cost Data Sample</h2>
-
-      {data.map((item) => {
-        const serviceSlug = item.sub_category
-          .toLowerCase()
-          .replace(/\s+/g, "-");
-        const citySlug = item.city.toLowerCase().replace(/\s+/g, "-");
-
-        return (
-          <Link
-            key={`${serviceSlug}-${citySlug}`}
-            href={`/${serviceSlug}/${citySlug}`}
-            style={{
-              display: "block",
-              textDecoration: "none",
-              color: "inherit",
-              border: "1px solid #ddd",
-              borderRadius: "8px",
-              padding: "1rem",
-              marginBottom: "1rem",
-              transition: "box-shadow 0.2s",
-            }}
-          >
-            <article>
-              <h3 style={{ margin: "0 0 0.5rem 0" }}>
-                {item.sub_category} in {item.city}
-              </h3>
-              <p style={{ margin: "0.25rem 0" }}>
-                <strong>Average Cost:</strong> ${item.avg_cost}
-              </p>
-              <p style={{ margin: "0.25rem 0" }}>
-                <strong>Typical Range:</strong> ${item.low_cost} – $
-                {item.high_cost}
-              </p>
-              <p style={{ margin: "0.25rem 0" }}>
-                <strong>Confidence Score:</strong> {item.confidence_score}%
-              </p>
-              <small>Source: {item.data_source}</small>
-            </article>
-          </Link>
-        );
-      })}
+      <article>
+        <h2 style={{ marginBottom: "1rem" }}>
+          {item.sub_category} in {item.city}
+        </h2>
+        <p>
+          <strong>Average Cost:</strong> ${item.avg_cost}
+        </p>
+        <p>
+          <strong>Typical Range:</strong> ${item.low_cost} – $ {item.high_cost}
+        </p>
+        <p>
+          <strong>Confidence Score:</strong> {item.confidence_score}%
+        </p>
+        <p>
+          <small>Source: {item.data_source}</small>
+        </p>
+      </article>
     </Layout>
   );
+}
+
+/* --- Static generation --- */
+export async function getStaticPaths() {
+  const paths = data.map((item) => ({
+    params: {
+      service: item.sub_category.toLowerCase().replace(/\s+/g, "-"),
+      city: item.city.toLowerCase().replace(/\s+/g, "-"),
+    },
+  }));
+  return { paths, fallback: false };
+}
+
+export async function getStaticProps({ params }) {
+  const match = data.find(
+    (i) =>
+      i.sub_category.toLowerCase().replace(/\s+/g, "-") === params.service &&
+      i.city.toLowerCase().replace(/\s+/g, "-") === params.city
+  );
+
+  return { props: { item: match || null } };
 }
